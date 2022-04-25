@@ -1,0 +1,22 @@
+.app {
+    padding: 2rem;
+    max-width: 500px;
+    margin: auto;
+
+    main {
+        box-shadow: 1px 1px 10px var(--bs);
+        background-color: var(--frg);
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .app {  
+        width: 50%;
+        max-width: 600px;
+        padding: 0;
+        margin: 2rem auto;
+    }
+}

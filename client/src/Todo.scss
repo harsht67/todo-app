@@ -1,0 +1,64 @@
+.todo {
+    font-size: var(--fs-400);
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    border-block-end: 1px solid var(--txt3);
+
+    .todo__checkbox {
+        width: 7.5%;
+        position: relative;
+        display: flex;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        > * {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+
+        .todo__customCheckbox {
+            width: 20px;
+            aspect-ratio: 1;
+            border: 1px solid var(--txt3);
+            border-radius: 50%;
+        }
+
+    }
+
+    .todo__text {
+        width: 100%;
+        color: var(--txt);
+
+        &::first-letter {
+            text-transform: capitalize;
+        }
+
+    }
+
+    .completed {
+        text-decoration: line-through;
+        color: var(--txt3);
+    }
+
+    .todo__closeBtn {
+        color: var(--txt3);
+
+        &:hover {
+            cursor: pointer;
+            color: #ff0000;
+        }
+
+    }
+
+}

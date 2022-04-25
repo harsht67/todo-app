@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bck);
+}
+
+:root {
+    --fs-300: 0.85rem;
+    --fs-400: 0.9rem;
+    --fs-700: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+    :root {
+        --fs-300: 0.9rem;
+        --fs-400: 1rem;
+        --fs-700: 2.2rem;
+    }
+}
