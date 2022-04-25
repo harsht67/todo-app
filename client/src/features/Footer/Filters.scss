@@ -1,0 +1,20 @@
+.filters {
+    font-weight: 500;
+
+    .filter {
+        display: inline-block;
+        text-transform: capitalize;
+        margin-inline: 0.5rem;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--txt);
+        }
+
+    }
+
+    .active {
+        color: #4079e6;
+    }
+
+}

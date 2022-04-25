@@ -2,16 +2,16 @@
 import './App.scss'
 
 // components
-import Header from './Header'
-import InputTodo from './InputTodo'
-import Todo from './Todo'
-import Footer from './Footer'
+import Header from './features/Header/Header'
+import InputTodo from './features/Input/InputTodo'
+import Todo from './features/Todo/Todo'
+import Footer from './features/Footer/Footer'
 
 import { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 import { fetchTodos, selectFilteredTodos } from './store/todosSlice.js'
-import GlobalStyle from './globalStyles'
+import GlobalStyle from './styles'
 import themes from './themes.js'
 import { useEffect } from 'react'
 
